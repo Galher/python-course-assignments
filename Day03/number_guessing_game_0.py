@@ -1,7 +1,4 @@
-#the user needs to guess a number between 1 and 20
-#the user has 1 attempts to guess the number
-#the user will be told if they are correct or not
-#the user will be told if they are too high or too low 
+
 import random
 number = random.randint(1, 20)
 print("Welcome to the number guessing game!")
