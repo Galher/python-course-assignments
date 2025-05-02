@@ -12,3 +12,6 @@ width = float(sys.argv[2])
 area = height * width
 perimeter = 2 * (height + width)      
 print("The area of the rectangle with height", height, "and width", width, "is:", area)
+print("The perimeter of the rectangle with height", height, "and width", width, "is:", perimeter)
+
+print("Goodbye!")
