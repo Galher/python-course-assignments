@@ -19,8 +19,11 @@ while guess != 'X':
             print("Thanks for playing!")
             print("Goodbye")
             break
-    elif guess != 'x':
+    elif guess != 'x' and guess != 's':
         print("Invalid input. Please enter a number between 1 and 20 or 'x' to exit.")
+        guess = input("Enter your guess: ")
+    if guess == 's':
+        print("The number is", number)
         guess = input("Enter your guess: ")
     if guess == 'x':
         print("You have exited the game.")
