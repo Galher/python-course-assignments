@@ -16,8 +16,6 @@ if len(sys.argv) != 2:
     sys.exit(1)
 
 input_sequence = sys.argv[1].upper()
-cleaned = clean_sequence(input_sequence)
-
 chunks = input_sequence.split('X')
 cleaned_chunks =[]
 for chunk in chunks:
@@ -25,6 +23,9 @@ for chunk in chunks:
         clean_chunk = clean_sequence(chunk)
         if clean_chunk != "":
             cleaned_chunks.append(clean_chunk)
-    
 
 print("Cleaned DNA sequences:", cleaned_chunks)
+
+cleaned_chunks.sort(key=len, reverse=True)
+
+print("Cleaned DNA sequences sorted by length:", cleaned_chunks)
