@@ -1,7 +1,7 @@
-import sys
 import re
 
 dna_nucleotides = {'A', 'C', 'G', 'T'}
+input_sequence = input("Please enter a DNA sequence: ").upper()
 
 def clean_sequence(sequence):
     clean = ""
@@ -12,11 +12,6 @@ def clean_sequence(sequence):
             break
     return clean
 
-if len(sys.argv) != 2:
-    print("Usage: python dna_sequencing.py <DNA_SEQUENCE>")
-    sys.exit(1)
-
-input_sequence = sys.argv[1].upper()
 chunks = re.split('[^ACGT]+', input_sequence)
 cleaned_chunks =[]
 for chunk in chunks:
