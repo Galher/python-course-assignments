@@ -49,3 +49,4 @@ def count_amino_acids(filename):
 
 file_path = input("Enter the path to the DNA sequence file: ")
 count_amino_acids(file_path)
+
